@@ -1,0 +1,11 @@
+app-calculator {
+  display: block;
+  padding: 15px;
+  width: 450px;
+  height: max-content;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: #494949;
+  box-shadow: 20px 20px 60px #3e3e3e,
+    -20px -20px 60px #545454;
+}

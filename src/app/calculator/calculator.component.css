@@ -1,0 +1,56 @@
+.first-input {
+  border-radius: 50px 50px 0 0;
+  height: 50px;
+  /* background-color: white; */
+  border: 0;
+  padding-right: 30px;
+  font-size: 30px;
+  color: gainsboro;
+  background: #3e3e3e;
+  box-shadow: inset 20px 20px 60px #353535,
+    inset -20px -20px 60px #474747;
+}
+
+.second-input {
+  border-radius: 0 0 50px 50px;
+  border: 0;
+  height: 70px;
+  padding-right: 30px;
+  font-size: 30px;
+  color: gainsboro;
+  background: #3e3e3e;
+  box-shadow: inset 20px 20px 60px #353535,
+    inset -20px -20px 60px #474747;
+}
+
+.zero {
+  width: 180px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.header {
+  display: inline-block;
+  color: gainsboro;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+  ;
+  padding-top: 3px;
+  display: inherit;
+  float: left;
+}
+
+.header mat-icon {
+  font-size: 40px;
+  float: left;
+  margin-right: 25px;
+}

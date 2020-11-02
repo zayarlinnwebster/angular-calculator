@@ -1,0 +1,113 @@
+    <div class="header">
+      <mat-icon>calculate</mat-icon>
+      <h1>Angular Calculator</h1>
+    </div>
+
+    <input type="text" [(ngModel)]="input" class="form-control first-input text-right" readonly>
+    <input type="text" [(ngModel)]="result" class="form-control second-input text-right" readonly>
+
+    <mat-grid-list cols="4" rowHeight="85" class="mt-3">
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="allClear()">
+          AC
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressChar('(')">
+          (
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressChar(')')">
+          )
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressOperator('/')">
+          /
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="85">
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('1')">
+          1
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('2')">
+          2
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('3')">
+          3
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressOperator('*')">
+          ×
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="85">
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('4')">
+          4
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('5')">
+          5
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('6')">
+          6
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressOperator('+')">
+          +
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="85">
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('7')">
+          7
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('8')">
+          8
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('9')">
+          9
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="pressOperator('-')">
+          -
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="85">
+      <mat-grid-tile colspan="2">
+        <button mat-fab color="basic" (click)="pressChar('0')" class="zero">
+          0
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="basic" (click)="pressChar('.')">
+          .
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="primary" (click)="getAnswer()">
+          =
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
